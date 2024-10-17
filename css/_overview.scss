@@ -1,0 +1,222 @@
+.main{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 90vh;
+
+    .profile{
+        margin-top: 20px;
+        img{
+          border: 1px solid #ECECEC;
+          width: 190px; 
+          height: 180px;
+        }
+        .img-icon{
+            border: 1px solid #ECECEC;
+            border-top: none;
+            margin-top: -3px;
+            padding: 10px;
+            i{
+                font-size: 15px;
+                color:darkgray;
+            }
+            span{
+                margin-left: 5px;
+                font-size: 12px;
+                color: darkgray;
+                cursor: pointer;
+            }
+        }
+
+      &-title{
+              h3{
+                font-size: 25px;
+                margin-top: 0;
+              }
+              .username{
+                margin-top: -25px;
+                font-size: 20px;
+                color: gray;
+                font-weight: lighter;
+              }
+              .profile-btn{
+                width: 100%;
+                padding: 7px 4px;
+                cursor: pointer;
+                font-size: 15px;
+                font-weight: 500;
+                border-radius: 3px;
+                outline: none;
+                border: 1px solid gray;
+                background-color:#EDEFF3 ;
+              }
+
+            
+        }
+
+        &-info{
+            .uni{
+                font-size: 12px;
+            }
+            .social {
+                margin-top: -10px;
+                a{
+                    text-decoration: none;
+                    color:#0681E2 ;
+                    font-size: 12px;
+                    top: -50px;
+                }
+            }
+           
+          }
+
+    }
+
+    .right-container{
+        margin-top:20px;
+        width: 100%;
+        .overview{
+           &-line{
+            width:90%;
+            color:$text-bg;
+            border-radius: 50%;
+           }
+           
+            ul{
+                display: flex;
+                
+
+                .links{
+                list-style: none;
+                padding-right:25px;
+                
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 13px;
+                    position: relative;
+                     &::after{
+                        background-color:$menu-line;
+                        content:"";
+                       position:absolute; 
+                       display:inline-block;
+                        width:0;
+                        height:0;
+                        bottom:-19px;
+                        left:0;
+                        z-index: 2;
+                        
+                        }
+
+                       &:hover::after{
+                         width: 100%;
+                         height: 2px;
+                    }
+                  
+                   
+                }
+                span{
+                    font-size: 13px;
+                    background-color: $text-bg;
+                  border-radius: 5px;
+                    padding: 1px 4px;
+                }
+                
+
+                }
+            }
+        }
+
+        .boxs-title{
+            display: flex;
+            margin-left: 40px;
+            justify-content: space-between;
+          .pins-c{
+            margin-right: 40px;
+            font-size: 13px;
+          }
+            .title-p{
+                font-size:14px;
+                font-weight: 300;
+            }
+        }
+
+
+
+        .boxs-container{
+            display:flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+            
+            
+            .boxs{
+                border: 1px solid #24292E;
+                width: 360px;
+                height: 80px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+
+                .boxs-pin-t{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    align-items: center;
+                    font-size: 15px;
+
+                    .icon-menu{
+                        font-size: 11px;
+                    }
+                    .pin{
+                     align-items: center;
+                     justify-content: center;
+
+                     .a-t{
+                        text-decoration: none;
+                        color:#0251AD;
+                     }
+
+                     .icon-book{
+                        font-size: 11px;
+                     }
+                    }
+
+                }
+
+                .lng{
+                    margin-top: 30px;
+                    margin-left: 15px;
+                    font-size: 14px;
+                    .c{
+                        display: inline-block;
+                        background-color:$css-color;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        
+                    }
+                }
+
+                
+            }
+
+
+
+        }
+
+
+        .github-img{
+            img{
+                width:95%;
+                height: auto;
+                margin-left: 20px;
+            }
+        }
+        
+    }
+   
+}

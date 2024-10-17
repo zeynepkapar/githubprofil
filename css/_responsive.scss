@@ -1,0 +1,91 @@
+@media (max-width:768px) {
+
+    .navbar{
+        width: 100%;
+        &-search{
+            .input{
+                width: 180px;
+            }
+        }
+
+        &-menu{
+            display: flex;
+            margin-left: -140px;
+            .navbar-link{
+                font-size: 10px;
+               
+            }
+            
+        }
+
+
+        &-rightside{
+            font-size: 10px;
+        }
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 200vh;
+        margin-left: 5px;
+
+        .profile{
+            &-info{
+                .line{
+                    width: 0;
+                }
+            }
+
+            &-img{
+                .img-icon{
+                    width: 171px;
+                }
+            }
+
+            &-title{
+                .profile-btn{
+                    width: 30%;
+                }
+            }
+        }
+
+        .right-container{
+
+        .overview{
+            width: 100%;
+            white-space: nowrap;
+
+            &-line{
+                width: 550px;
+                margin-left: 30px;
+            }
+        }
+
+        .boxs-title{
+            justify-content:space-between;
+
+            .pins-c{
+                margin-right: 88px;
+            }
+        }
+
+        .boxs-container{
+            align-items: center;
+            justify-content: center;
+            margin-left: -40px;
+        }
+
+        .github-img{
+            width: 80%;
+            margin-left: 40px;
+        }
+        
+        }
+
+
+
+    }
+    
+}
